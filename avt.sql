@@ -102,7 +102,7 @@ CREATE TABLE `cliente` (
   `Apellido` varchar(45) NOT NULL,
   `Direccion` varchar(90) NOT NULL,
   `Telefono` varchar(45) NOT NULL,
-  `Tarjeta` varchar(45) NOT NULL,
+  `Tarjeta` varchar(45),
   PRIMARY KEY (`DPI`)
 ) ;
 
