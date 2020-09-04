@@ -64,9 +64,11 @@ CREATE TABLE `asiento` (
   `fila` varchar(45) DEFAULT NULL,
   `columna` varchar(45) DEFAULT NULL,
   `Codigo_piso` varchar(45) DEFAULT NULL,
+  `Codigo_clase` VARCHAR (30) NOT NULL
   PRIMARY KEY (`Codigo`),
   KEY `asientoPiso_fk` (`Codigo_piso`),
-  CONSTRAINT `asientoPiso_fk` FOREIGN KEY (`Codigo_piso`) REFERENCES `piso` (`Codigo`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `asientoPiso_fk` FOREIGN KEY (`Codigo_piso`) REFERENCES `piso` (`Codigo`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `asientoClase_fk` FOREIGN KEY (`Codigo_clase`) REFERENCES `clase` (`Codigo`) ON DELETE CASCADE ON UPDATE NO ACTION;
 );
 
 --
@@ -152,7 +154,6 @@ DROP TABLE IF EXISTS `reserva_viaje`;
 
 CREATE TABLE `reserva_viaje` (
   `No_reserva` int NOT NULL AUTO_INCREMENT,
-  `Clase` varchar(30) NOT NULL,
   `Codigo_asiento` varchar(30) NOT NULL,
   `Codigo_tarjeta` int NOT NULL,
   `Fecha_reserva` date DEFAULT NULL,
@@ -161,6 +162,5 @@ CREATE TABLE `reserva_viaje` (
   KEY `claseReserva_fk` (`Clase`),
   KEY `tarjetaReserva_fk` (`Codigo_tarjeta`),
   CONSTRAINT `asientoReserva_fk` FOREIGN KEY (`Codigo_asiento`) REFERENCES `asiento` (`Codigo`) ON UPDATE CASCADE,
-  CONSTRAINT `claseReserva_fk` FOREIGN KEY (`Clase`) REFERENCES `clase` (`Codigo`) ON UPDATE CASCADE,
   CONSTRAINT `tarjetaReserva_fk` FOREIGN KEY (`Codigo_tarjeta`) REFERENCES `tarjeta_embarque` (`ID`) ON UPDATE CASCADE
 );
