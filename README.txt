@@ -9,8 +9,7 @@ SELECT `Nombre` FROM `aviteca`.`cliente` c INNER JOIN `aviteca`.`tarjeta_embarqu
 
 
 4) Los 10 aviones que más viajes han realizado a un país en específico.
-falta seleccionar los 10 mas altos
-SELECT `Codigo_Avion`, count(`Codigo_Avion`) AS 'veces' FROM `aviteca`.`vuelo` GROUP BY (`Codigo_Avion`) ;
+SELECT `Codigo_Avion`, count(`Codigo_Avion`) AS 'veces' FROM `aviteca`.`vuelo` GROUP BY (`Codigo_Avion`) LIMIT 10;
 
 
 5) La clase más ocupada en un intervalo de tiempo según el país de destino.
