@@ -42,3 +42,7 @@ INSERT INTO vuelo VALUES ('VUL-5',2020-01-03,'01:00','12:00','AER-1','AER-4','AV
 
 INSERT INTO tarjeta_embarque VALUES (1,'Efectivo','1000','VUL-1');
 INSERT INTO tarjeta_embarque VALUES (2,'Efectivo','1002','VUL-1');
+INSERT INTO tarjeta_embarque VALUES (3,'Efectivo','1003','VUL-2');
+INSERT INTO tarjeta_embarque VALUES (4,'Efectivo','1004','VUL-2');
+
+INSERT INTO reserva_viaje VALUES (1,'CLA-1','1003','VUL-2');
