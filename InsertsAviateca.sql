@@ -23,7 +23,6 @@ INSERT INTO avion VALUES ('AVI-3');
 INSERT INTO piso VALUES ('PIS-1','2','3','AVI-1');
 INSERT INTO piso VALUES ('PIS-2','3','6','AVI-1');
 INSERT INTO piso VALUES ('PIS-3','6','1','AVI-2');
-INSERT INTO piso VALUES ('PIS-4','6','2','AVI-2');
 
 INSERT INTO asiento VALUES ('AS-1','1','1','PIS-1');
 INSERT INTO asiento VALUES ('AS-2','1','2','PIS-1');
