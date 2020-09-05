@@ -4,6 +4,8 @@ select c.Nombre,c.Apellido,v.Codigo,v.Fecha_vuelo from cliente c, tarjeta_embarq
 2) Clientes que viajan a un aeropuerto en una fecha específica.
 ESTE ESTA MALO XDXD PUSE codigo de vuelo y es fecha
 SELECT `Nombre` FROM `aviteca`.`cliente` c INNER JOIN `aviteca`.`tarjeta_embarque` t  WHERE t.`DPI_cliente` = c.`DPI` AND t.`Codigo_vuelo` = 'VUL-1';
+Este es el bueno
+SELECT c.Nombre FROM cliente c , tarjeta_embarque t, vuelo v, aeropuerto a  WHERE t.DPI_cliente = c.DPI AND t.Codigo_vuelo = v.Codigo AND v.Aeropuerto_entrada = a.Codigo AND a.pais = 'Guatemala' AND v.Fecha_vuelo = '2020-01-01';
 
 3) Porcentaje de ocupación diario de los aviones seleccionados en un intervalo de tiempo.
 
