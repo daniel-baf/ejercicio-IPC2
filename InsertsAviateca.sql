@@ -39,18 +39,12 @@ INSERT INTO vuelo VALUES ('VUL-3','2020-01-01','01:00','12:00','AER-3','AER-4','
 INSERT INTO vuelo VALUES ('VUL-4','2020-01-02','01:00','12:00','AER-4','AER-3','AVI-2');
 INSERT INTO vuelo VALUES ('VUL-5','2020-01-03','01:00','12:00','AER-1','AER-4','AVI-1');
 
-INSERT INTO avion_clase VALUES ('AKL-1',12,'CLA-1','AVI-1');
-INSERT INTO avion_clase VALUES ('AKL-2',22,'CLA-2','AVI-1');
-INSERT INTO avion_clase VALUES ('AKL-3',50,'CLA-3','AVI-1');
-INSERT INTO avion_clase VALUES ('AKL-4',8,'CLA-4','AVI-1');
-INSERT INTO avion_clase VALUES ('AKL-5',32,'CLA-1','AVI-2');
-INSERT INTO avion_clase VALUES ('AKL-6',22,'CLA-2','AVI-2');
-INSERT INTO avion_clase VALUES ('AKL-7',30,'CLA-3','AVI-2');
-INSERT INTO avion_clase VALUES ('AKL-8',12,'CLA-4','AVI-2');
-INSERT INTO avion_clase VALUES ('AKL-9',32,'CLA-1','AVI-3');
-INSERT INTO avion_clase VALUES ('AKL-10',32,'CLA-2','AVI-3');
-INSERT INTO avion_clase VALUES ('AKL-11',20,'CLA-3','AVI-3');
-INSERT INTO avion_clase VALUES ('AKL-12',9,'CLA-4','AVI-3');
+INSERT INTO avion_clase VALUES ('AKL-1',10,'CLA-1','AVI-1');
+INSERT INTO avion_clase VALUES ('AKL-2',2,'CLA-2','AVI-1');
+INSERT INTO avion_clase VALUES ('AKL-3',10,'CLA-3','AVI-1');
+INSERT INTO avion_clase VALUES ('AKL-4',2,'CLA-4','AVI-1');
+INSERT INTO avion_clase VALUES ('AKL-5',2,'CLA-1','AVI-2');
+INSERT INTO avion_clase VALUES ('AKL-6',4,'CLA-2','AVI-2');
 
 INSERT INTO tarjeta_embarque VALUES (1,'Efectivo','1000','VUL-1');
 INSERT INTO tarjeta_embarque VALUES (2,'Efectivo','1002','VUL-1');
@@ -58,7 +52,7 @@ INSERT INTO tarjeta_embarque VALUES (3,'Efectivo','1003','VUL-2');
 INSERT INTO tarjeta_embarque VALUES (4,'Efectivo','1004','VUL-2');
 
 INSERT INTO reserva_viaje(codigo_asiento,codigo_tarjeta,fecha_reserva) VALUES('AS-1',1,'2020-01-01');
-INSERT INTO reserva_viaje(codigo_asiento,codigo_tarjeta,fecha_reserva) VALUES('AS-2',2,'2020-09-04');
-INSERT INTO reserva_viaje(codigo_asiento,codigo_tarjeta,fecha_reserva) VALUES('AS-8',3,'2020-09-04');
-INSERT INTO reserva_viaje(codigo_asiento,codigo_tarjeta,fecha_reserva) VALUES('AS-3',2,'2020-09-04');
-INSERT INTO reserva_viaje(codigo_asiento,codigo_tarjeta,fecha_reserva) VALUES('AS-5',4,'2020-09-11');
+INSERT INTO reserva_viaje(codigo_asiento,codigo_tarjeta,fecha_reserva) VALUES('AS-2',2,'2019-12-31');
+INSERT INTO reserva_viaje(codigo_asiento,codigo_tarjeta,fecha_reserva) VALUES('AS-8',3,'2019-12-30');
+INSERT INTO reserva_viaje(codigo_asiento,codigo_tarjeta,fecha_reserva) VALUES('AS-3',2,'2019-12-31');
+INSERT INTO reserva_viaje(codigo_asiento,codigo_tarjeta,fecha_reserva) VALUES('AS-5',4,'2019-12-30');
