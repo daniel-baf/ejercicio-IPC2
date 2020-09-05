@@ -1,7 +1,7 @@
 CREATE DATABASE  IF NOT EXISTS `aviteca`;
 USE `aviteca`;
 --
--- Table structure for table `aeropuerto`
+-- Estructura para la tabla `aeropuerto`
 --
 
 DROP TABLE IF EXISTS `aeropuerto`;
@@ -15,7 +15,7 @@ CREATE TABLE `aeropuerto` (
 ) ;
 
 --
--- Table structure for table `avion`
+-- Estructura para la tabla `avion`
 --
 
 DROP TABLE IF EXISTS `avion`;
@@ -26,7 +26,7 @@ CREATE TABLE `avion` (
 );
 
 --
--- Table structure for table `clase`
+-- Estructura para la tabla `clase`
 --
 
 DROP TABLE IF EXISTS `clase`;
@@ -38,7 +38,7 @@ CREATE TABLE `clase` (
 );
 
 --
--- Table structure for table `piso`
+-- Estructura para la tabla `piso`
 --
 
 DROP TABLE IF EXISTS `piso`;
@@ -54,7 +54,7 @@ CREATE TABLE `piso` (
 ) ;
 
 --
--- Table structure for table `asiento`
+-- Estructura para la tabla `asiento`
 --
 
 DROP TABLE IF EXISTS `asiento`;
@@ -73,7 +73,7 @@ CREATE TABLE `asiento` (
 );
 
 --
--- Table structure for table `avion_clase`
+-- Estructura para la tabla `avion_clase`
 --
 
 DROP TABLE IF EXISTS `avion_clase`;
@@ -91,7 +91,7 @@ CREATE TABLE `avion_clase` (
 );
 
 --
--- Table structure for table `cliente`
+-- Estructura para la tabla `cliente`
 --
 
 DROP TABLE IF EXISTS `cliente`;
@@ -107,7 +107,7 @@ CREATE TABLE `cliente` (
 ) ;
 
 --
--- Table structure for table `vuelo`
+-- Estructura para la tabla `vuelo`
 --
 
 DROP TABLE IF EXISTS `vuelo`;
@@ -130,7 +130,7 @@ CREATE TABLE `vuelo` (
 );
 
 --
--- Table structure for table `tarjeta_embarque`
+-- Estructura para la tabla `tarjeta_embarque`
 --
 
 DROP TABLE IF EXISTS `tarjeta_embarque`;
@@ -148,7 +148,7 @@ CREATE TABLE `tarjeta_embarque` (
 );
 
 --
--- Table structure for table `reserva_viaje`
+-- Estructura para la tabla `reserva_viaje`
 --
 
 DROP TABLE IF EXISTS `reserva_viaje`;
