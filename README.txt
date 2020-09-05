@@ -13,4 +13,4 @@ SELECT `Codigo_Avion`, count(`Codigo_Avion`) AS 'veces' FROM `aviteca`.`vuelo` G
 
 
 5) La clase más ocupada en un intervalo de tiempo según el país de destino.
-
+SELECT a.`Codigo_clase`, count(a.`Codigo_clase`) FROM `aviteca`.`asiento` a INNER JOIN `aviteca`.`reserva_viaje` r ON r.`Codigo_asiento` = a.`Codigo`  GROUP BY (`Codigo_clase`) LIMIT 1;
