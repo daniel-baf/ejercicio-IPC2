@@ -16,3 +16,15 @@ SELECT `Codigo_Avion`, count(`Codigo_Avion`) AS 'veces' FROM `aviteca`.`vuelo` G
 
 5) La clase más ocupada en un intervalo de tiempo según el país de destino.
 SELECT cl.Nombre, COUNT(cl.Nombre) FROM clase cl, asiento asi, reserva_viaje r, tarjeta_embarque t, vuelo v, aeropuerto a where cl.Codigo = asi.Codigo_clase AND asi.Codigo = r.Codigo_asiento AND t.ID = r.Codigo_tarjeta AND t.Codigo_vuelo = v.Codigo AND a.Codigo = v.Aeropuerto_entrada AND a.pais = 'Guatemala' GROUP BY (cl.Nombre) LIMIT 1;
+
+PRUEBA PARA BETWEEN
+
+SELECT cl.Nombre, COUNT(cl.Nombre) FROM clase cl, asiento asi, reserva_viaje r, tarjeta_embarque t, vuelo v, aeropuerto a 
+where cl.Codigo = asi.Codigo_clase 
+AND (asi.Codigo = r.Codigo_asiento)
+AND (t.ID = r.Codigo_tarjeta)
+AND (t.Codigo_vuelo = v.Codigo) 
+AND (a.Codigo = v.Aeropuerto_entrada )
+AND (a.pais = 'Guatemala')
+AND (v.Fecha_vuelo BETWEEN '2020-01-01' AND '2020-01-02')
+GROUP BY (cl.Nombre) LIMIT 1;
